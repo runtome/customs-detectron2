@@ -152,8 +152,8 @@ def register_datasets(root_dir, class_list_file):
 
     # Register the train and validation datasets.
     for d in ['train', 'val']:
-        DatasetCatalog.register(d, lambda d=d: get_dicts(os.path.join(root_dir, d, 'imgs'),
-                                                         os.path.join(root_dir, d, 'anns')))
+        DatasetCatalog.register(d, lambda d=d: get_dicts(os.path.join(root_dir, d, 'images'),
+                                                         os.path.join(root_dir, d, 'labels')))
         # Set the metadata for the dataset.
         MetadataCatalog.get(d).set(thing_classes=classes_)
 
