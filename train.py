@@ -33,7 +33,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--class-list', default='./class.names')
-    parser.add_argument('--data-dir', default='./data')
+    parser.add_argument('--data-dir', default='./datasets')
     parser.add_argument('--output-dir', default='./output')
     parser.add_argument('--device', default='cpu')
     parser.add_argument('--learning-rate', default=0.00025)
