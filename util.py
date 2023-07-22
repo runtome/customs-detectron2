@@ -104,7 +104,7 @@ def get_dicts(img_dir, ann_dir):
 
         record = {}
 
-        filename = os.path.join(img_dir, file[:-4] + '.jpg')
+        filename = os.path.join(img_dir, file[:-4] + '.png')
         height, width = cv2.imread(filename).shape[:2]
 
         record["file_name"] = filename
